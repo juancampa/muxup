@@ -10,7 +10,6 @@ fi
 
 WINDOWS=`tmux list-windows -t $SESSION_NAME -F "#W"`
 PROJECTS='ayva-common ayva-node ayva-web ayva-code ayva-broker ayva-toolkit ayva-api ayva-hooks programs'
-PROJECTS='ayva-web'
 
 for dirName in $PROJECTS; do
     project=`echo $dirName | cut -d"-" -f 2`
